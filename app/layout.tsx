@@ -36,7 +36,7 @@ export default function RootLayout({
 
         {/* Footer simple demandé par le brief */}
         <footer className="bg-slate-950 text-gray-400 text-center py-4 border-t border-slate-800 text-sm">
-          <p>© {new Date().getFullYear()} - Mon Nom - Tous droits réservés</p>
+          <p>© {new Date().getFullYear()} - Hanine Ayoub - Tous droits réservés</p>
         </footer>
       </body>
     </html>
