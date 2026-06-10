@@ -1,3 +1,4 @@
+//Une interface: sert à décrire la structure d'un objet.
 export interface Project {
     id:string;
     title:string;
