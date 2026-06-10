@@ -11,8 +11,7 @@ export interface Project {
 export interface Skill {
   name: string;
   level: 'Débutant' | 'Intermédiaire' | 'Avancé'; // Types d'unions stricts
-  category: 'Frontend' | 'Backend' | 'Outils'; // Catégories demandées
-  icon: string; // Emoji ou nom d'icône
+  icon: string; 
 }
 
 // Interface pour le parcours (Page About)
