@@ -24,5 +24,13 @@ export const projects: Project[] = [
     "Application web développée avec React permettant d'explorer un vaste catalogue de jeux vidéo grâce à l'API RAWG. L'application intègre la recherche, les filtres par genre, la pagination, les détails des jeux, les équipes de développement et les profils des créateurs avec une gestion complète des états asynchrones",
   stack: ["React", "Axios", "React Router", "Tailwind","RAWG API"],
     githubUrl: 'https://github.com/walid-olt/GXP.git',
+  },
+  {
+     id: '4',
+     title: "API de Gestion de Portefeuilles Financiers",
+  description:
+    "Développement d'une API REST avec Express.js permettant la gestion des utilisateurs et de leurs portefeuilles financiers. L'application intègre les opérations de dépôt et de retrait avec validation métier, gestion des erreurs, architecture MVC, middleware personnalisés et persistance des données",
+  stack: ["Nodejs", "Postman", " Express", "REST API","JavaScript"],
+    githubUrl: 'https://github.com/ayoubhanine/Digital-Wallet-API-avec-Express.js.git',
   }
 ];

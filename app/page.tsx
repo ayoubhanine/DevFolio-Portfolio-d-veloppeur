@@ -4,7 +4,7 @@ import ProjectCard from '@/components/ProjectCard';
 
 export default function Home() {
   // On ne prend que les 2 ou 3 premiers projets pour l'aperçu de la Home
-  const featuredProjects = projects.slice(0, 3);
+  const featuredProjects = projects.slice(0, 2);
 
   return (
     <div className="space-y-20 pb-16">
