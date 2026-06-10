@@ -4,7 +4,7 @@ export interface Project {
     description:string;
     stack:string[];
     githubUrl:string;
-    demoUrl: string; // URL fictive demandée
+    
 }
 // Interface pour une compétence (Page Skills)
 export interface Skill {
