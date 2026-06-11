@@ -1,4 +1,5 @@
 import { Experience } from "@/types"
+import Image from "next/image"
 
 const timeLineData:Experience[]=[
      {
@@ -31,37 +32,69 @@ export default function AboutPage(){
     return(
     <div className="max-w-4xl mx-auto px-6 py-12 space-y-16">
       
-      {/* Profil & Biographie */}
-      <section className="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-        {/* Avatar Fictif / Espace Image */}
-        <div className="w-32 h-32  md:w-40 bg-linear-to-tr from-blue-500 to-teal-400 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-inner shrink-0">
-          HA
-        </div>
-        
-        <div className="space-y-4 text-center md:text-left">
-          <h1 className="text-3xl font-bold text-slate-900">À propos de moi</h1>
-          <p className="text-slate-600 leading-relaxed">
-           Bonjour , Je m'appelle Ayoub, développeur web Full Stack
-            en formation MERN Stack. Passionné par le développement d'applications web modernes, 
-            je travaille principalement avec React, JavaScript et les technologies du web. 
-            {/* J'aime concevoir des solutions performantes, maintenir un code propre 
-           et continuer à développer mes compétences à travers des projets concrets. */}
-          </p>
-        </div>
-      </section>
+     
+     <section className="flex flex-col md:flex-row items-center gap-10 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+  
+  {/* Photo */}
+  <div className="relative w-36 h-36 md:w-44 md:h-44 shrink-0">
+    <Image
+      src="/Portfolio.jpg"
+      alt="Photo de Ayoub"
+      fill
+      className="rounded-full object-cover border-4 border-blue-100 shadow-lg"
+      priority
+    />
+  </div>
 
-      {/* Parcours / Timeline */}
+  <div className="space-y-4 text-center md:text-left">
+    <div>
+      <h1 className="text-3xl font-bold text-slate-900">
+        Ayoub
+      </h1>
+      <p className="text-blue-600 font-medium mt-1">
+        Développeur Web Full Stack | MERN Stack
+      </p>
+    </div>
+
+    <p className="text-slate-600 leading-relaxed max-w-2xl">
+      Passionné par le développement web, je conçois des applications
+      modernes, performantes et intuitives en utilisant React, Next.js,
+      Node.js et MongoDB. Actuellement en formation MERN Stack, je continue
+      à renforcer mes compétences à travers des projets concrets et des défis
+      techniques afin de créer des solutions web fiables et évolutives.
+    </p>
+
+    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+      <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">
+        React
+      </span>
+      <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">
+        Next.js
+      </span>
+      <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">
+        TypeScript
+      </span>
+      <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">
+        Node.js
+      </span>
+      <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">
+        MongoDB
+      </span>
+    </div>
+  </div>
+</section>
+      
       <section className="space-y-8">
         <div>
           <h2 className="text-2xl font-bold text-slate-900">Mon Parcours</h2>
           <p className="text-slate-500 text-sm mt-1">Formations et expériences clés</p>
         </div>
 
-        {/* Design structurel de la Timeline */}
+      
         <div className="relative border-l-2 border-slate-200 pl-6 ml-4 space-y-10">
           {timeLineData.map((item) => (
             <div key={item.id} className="relative">
-              {/* Le petit point repère sur la ligne */}
+              
               <span className="absolute -left-7.75 top-1.5 bg-blue-600 h-4 w-4 rounded-full border-4 border-white shadow-sm" />
               
               <div className="bg-white p-5 rounded-xl border border-slate-100 shadow-sm space-y-2">
